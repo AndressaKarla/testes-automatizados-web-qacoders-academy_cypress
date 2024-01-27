@@ -1,0 +1,15 @@
+{
+  "name": "testes-automatizados-web-qacoders-academy_cypress",
+  "version": "1.0.0",
+  "description": "Projeto de Testes Automatizados Web no ERP Qa.Coders Academy em Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chrome"
+  },
+  "author": "Andressa Karla",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.3"
+  }
+}
