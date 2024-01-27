@@ -5,7 +5,6 @@
 Esse projeto "testes-automatizados-web-qacoders-academy_cypress" é executado em um ambiente de automação no ["ERP do Qa.Coders Academy"](https://automacao.qacoders-academy.com.br), desenvolvido para o curso ["Workshop de Liderança Técnica de QA (Tech Lead QA)"](https://www.linkedin.com/embed/feed/update/urn:li:share:7151230492871188481) do ["Qa.Coders Academy"](https://qacoders-academy.com.br).
 
 
-
 # :computer: Workshop de Liderança Técnica de QA (Tech Lead QA)
 ## :books: Conteúdos apresentados nesse workshop
 - Aula 01
@@ -40,7 +39,7 @@ Esse projeto "testes-automatizados-web-qacoders-academy_cypress" é executado em
 ## :triangular_flag_on_post: Executar os testes automatizados web no navegador chrome em modo headless (2° plano) e Gerar os resultados dos testes no GitHub Actions
 - Nesse repositório, acessar a aba "Actions"
 - Na seção "Actions", clicar em "Pipeline Testes Automatizados Web ERP Qa.Coders Academy Cypress"
-- Em "This workflow has a workflow_dispatch event trigger.", clicar em "Run workflow" > "Run workflow" para executar os testes automatizados web no navegador chrome em modo headless (2° plano) no GitHub Actions [com o conteúdo de "secrets.CYPRESS_ENV" (baseado no arquivo "cypress.env.example.json" e configurado na aba "Settings" desse repositório > "Secrets and variables" > "Actions") que foi redirecionado para o arquivo ["cypress.env.example.json"](https://github.com/AndressaKarla/testes-automatizados-web-qacoders-academy_cypress/blob/main/cypress.env.example.json)]] 
+- Em "This workflow has a workflow_dispatch event trigger.", clicar em "Run workflow" > "Run workflow" para executar os testes automatizados web no navegador chrome em modo headless (2° plano) no GitHub Actions [com o conteúdo de "secrets.CYPRESS_ENV" (baseado no arquivo ["cypress.env.example.json"](https://github.com/AndressaKarla/testes-automatizados-web-qacoders-academy_cypress/blob/main/cypress.env.example.json) e configurado na aba "Settings" desse repositório > "Secrets and variables" > "Actions" > "Secrets" > "Repository secrets") que foi redirecionado para o arquivo "cypress.env.json"] 
 - Após o término da execução, clicar na run "Pipeline Testes Automatizados Web ERP Qa.Coders Academy Cypress"
 - Na seção "Artifacts", clicar em "cypress-videos-chrome"
 - Na janela aberta, escolher um diretório para baixar a pasta compactada "cypress-videos-chrome.zip"
@@ -214,9 +213,10 @@ npm install --force
 ```
 code .
 ```
+- Aguardar o VS Code sert aberto
+- Fechar esse cmder
 - No VS Code aberto, caso seja apresentado "Do you trust the authors on the files in this folder?", marcar a opção "Trust the authors of all files in the parent folder ...."
 	- Clicar no botão "Yes, I trust the authors ...."
-- Fechar esse cmder
 
 ## :hammer_and_wrench: Criar arquivo "cypress.env.json", informando os dados com base no arquivo "cypress.env.example.json"
 - No VS Code aberto anteriormente, acessar "testes-automatizados-web-qacoders-academy_cypress"
@@ -246,10 +246,10 @@ npm run cypress:open
 ```
 - NÃO fechar esse cmder
 - Na interface gráfica do Cypress, clicar em "Continue"
-- Em "Welcome to Cypress!", clicar em "Web Testing"
+- Em "Welcome to Cypress!", clicar em "E2E Testing"
 - Em "Choose a browser", clicar em "Chrome"
-- Clicar em "Start Web Testing in Chrome"
-- Em "testes-automatizados-web-qacoders-academy_cypress" > "Specs"> "Web specs" > "cypress\e2e", clicar em "login", etc
+- Clicar em "Start E2E Testing in Chrome"
+- Em "testes-automatizados-web-qacoders-academy_cypress" > "Specs"> "E2E specs" > "cypress\e2e", clicar em "login", etc
 
 
 ## :triangular_flag_on_post: Ou executar os testes automatizados web no navegador chrome em modo headless (2° plano) e Gerar os resultados dos testes no computador
@@ -265,7 +265,7 @@ Ex.:
 ```
 cd "C:\PROJETOS\WorkshopLiderancaTecnicaQA\testes-automatizados-web-qacoders-academy_cypress"
 ```
-- Informar o comando abaixo para executar todas as features e/ou cenários do projeto em modo headless (2° plano - mesmo modo e comando semelhante ao que é utilizado no "Passo 2" da "Pipeline Testes Automatizados Web ERP Qa.Coders Academy Cypress" em ".github > workflows > [workflow-testes-automatizados-web-qacoders-academy-cypress.yml](https://github.com/AndressaKarla/testes-automatizados-web-qacoders-academy_cypress/blob/main/.github/workflows/workflow-testes-automatizados-web-qacoders-academy-cypress.yml)" no GitHub Actions) e Gerar os resultados dos testes no computador:
+- Informar o comando abaixo para executar todas as features e/ou cenários do projeto em modo headless (2° plano - mesmo modo e comando semelhante ao que é utilizado no "Passo 3" da "Pipeline Testes Automatizados Web ERP Qa.Coders Academy Cypress" em ".github > workflows > [workflow-testes-automatizados-web-qacoders-academy-cypress.yml](https://github.com/AndressaKarla/testes-automatizados-web-qacoders-academy_cypress/blob/main/.github/workflows/workflow-testes-automatizados-web-qacoders-academy-cypress.yml)" no GitHub Actions) e Gerar os resultados dos testes no computador:
 ```
 npm run cypress:run
 ```
