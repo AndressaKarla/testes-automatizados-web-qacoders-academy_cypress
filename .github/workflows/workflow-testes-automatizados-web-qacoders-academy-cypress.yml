@@ -29,7 +29,7 @@ jobs:
       
     steps:
       - name: Passo 1 - Obter cópia do código-fonte do repositório
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4
 
       - name: Passo 2 - Redirecionar o conteúdo de "secrets.CYPRESS_ENV" para o arquivo "cypress.env.json"
         run: |
@@ -45,7 +45,7 @@ jobs:
           spec: ${{ github.event.inputs.spec }} # configurado em "on > workflow_dispatch > inputs > spec"
 
       - name: Passo 4 - Armazenar os resultados dos testes em vídeos
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         # expressão condicional para que sempre seja executado independentemente dos resultados dos steps anteriores
         if: ${{ always() }}
         with:
@@ -55,7 +55,7 @@ jobs:
           retention-days: 30
 
       - name: Passo 5 - Armazenar os resultados dos testes em screenshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: ${{ always() }}
         with:
           name: cypress-screenshots-chrome
