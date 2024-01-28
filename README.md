@@ -9,16 +9,18 @@ Esse projeto "testes-automatizados-web-qacoders-academy_cypress" é executado em
 ## :books: Conteúdos apresentados nesse workshop
 - Aula 01
   - Aspectos da liderança;
+    - "FIORELLI (2004) define a liderança como sendo "a capacidade de exercer influência sobre as pessoas.""
   - Assessment;
   - Diagrama;
 
 - Aula 02
-	- Documentação de Teste;
-	- Testes de software;
+  - Documentação de Teste;
+  - Testes de software;
 	
 - Aula 03 e 04
   - Projeto de Automação;
   - Automação com Cypress;
+    - Instalação e configuração do Cypress versão 13.6.3;
     - Testes independentes;
     - Custom Commands;
     - Reusos e refatorações;
@@ -31,7 +33,8 @@ Esse projeto "testes-automatizados-web-qacoders-academy_cypress" é executado em
         - https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Folder-Structure
 
 - Aula 05
-	- DevOps - Configuração do CI
+  - DevOps - Configuração do CI
+    - GitHub Actions 
 
 ---
 # :dart: Executar testes em um ambiente de automação e Gerar os resultados dos testes no GitHub Actions
